@@ -65,32 +65,26 @@
 ```
 app/src/main/java/com/example/socialapp/
 ├── api/                    # لایه‌ی ارتباط با سرور (REST)
-│   ├── Models.kt           # مدل‌های داده (UserOut, MessageOut, ...)
-│   ├── SocialApi.kt        # تعریف اندپوینت‌های Retrofit
-│   └── RetrofitClient.kt   # راه‌اندازی Retrofit + OkHttp
+│   ├── Models.kt           #   (UserOut, MessageOut, ...)
+│   ├── SocialApi.kt        #  Retrofit
+│   └── RetrofitClient.kt   #  Retrofit + OkHttp
 ├── data/
-│   └── SessionManager.kt   # مدیریت توکن و اطلاعات نشست
+│   └── SessionManager.kt   # مدیریت توکن   
 ├── ui/                     # لایه‌ی رابط کاربری
 │   ├── LoginActivity.kt    # ورود با شماره تلفن
 │   ├── OtpActivity.kt      # تأیید کد OTP
-│   ├── ChatListActivity.kt # لیست چت‌ها + پوشه‌ها
+│   ├── ChatListActivity.kt #  چت‌ها + پوشه‌ها
 │   ├── ChatActivity.kt     # صفحه‌ی چت
 │   ├── CallActivity.kt     # صفحه‌ی تماس WebRTC
 │   ├── ChatListAdapter.kt  # آداپتر لیست چت‌ها
 │   ├── MessageAdapter.kt   # آداپتر پیام‌ها
 │   └── GroupMembersDialog.kt # دیالوگ مدیریت اعضا
 ├── util/
-│   └── Constants.kt        # ثابت‌ها (BASE_URL, WS_URL, ...)
+│   └── Constants.kt        #  (BASE_URL, WS_URL, ...)
 ├── webrtc/
-│   └── WebRTCClient.kt     # کلاینت WebRTC
+│   └── WebRTCClient.kt     #  WebRTC
 └── ws/
-    └── WebSocketManager.kt # مدیریت اتصال WebSocket
-
-app/src/main/res/
-├── layout/                 # فایل‌های XML رابط کاربری
-├── values/                 # رنگ‌ها، رشته‌ها، تم
-├── drawable/               # آیکون‌ها و shapeها
-└── ...
+    └── WebSocketManager.kt #   WebSocket
 ```
 
 ## راه‌اندازی

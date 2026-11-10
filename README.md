@@ -100,7 +100,7 @@ app/src/main/java/com/example/socialapp/
 
 git clone https://github.com/akhzari-itshield/SocialApp-Client
 
-cd SocialApp
+cd SocialApp-Client
 
 ### گام ۲: تنظیم آدرس سرور
 ```

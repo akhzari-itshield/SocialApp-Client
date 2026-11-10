@@ -98,7 +98,7 @@ app/src/main/java/com/example/socialapp/
 
 ### گام ۱: کلون کردن پروژه
 
-git clone https://github.com/akhzari-itshield/SocialApp.git
+git clone https://github.com/akhzari-itshield/SocialApp-Client
 
 cd SocialApp
 

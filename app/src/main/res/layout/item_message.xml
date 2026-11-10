@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvMeta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="11sp"
+            android:textColor="@color/text_secondary"/>
+
+        <!-- ⭐ تیک خوانده‌شدن -->
+        <TextView
+            android:id="@+id/tvReadTick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/primary"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/replyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#e5e7eb"
+        android:padding="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="↪ پاسخ به:"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"/>
+
+        <TextView
+            android:id="@+id/tvReplyContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="6dp"
+        android:background="#e5e7eb"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/fileCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#f1f5f9"
+        android:padding="10dp"
+        android:layout_marginTop="6dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@color/primary_light"
+            android:gravity="center"
+            android:text="📎"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/tvFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="middle"
+                android:textColor="@color/text_primary"/>
+
+            <TextView
+                android:id="@+id/tvFileSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/voiceRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="6dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btnPlayVoice"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/primary_light"
+            android:src="@android:drawable/ic_media_play"
+            android:tint="@color/primary"/>
+
+        <TextView
+            android:id="@+id/tvVoiceDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="🎤 پیام صوتی"
+            android:textSize="13sp"
+            android:textColor="@color/text_primary"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>

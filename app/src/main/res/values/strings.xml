@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">شبکه اجتماعی</string>
+    <string name="login_title">ورود به شبکه اجتماعی</string>
+    <string name="phone_hint">شماره تلفن (مثال: 09121234567)</string>
+    <string name="send_otp">دریافت کد تایید</string>
+    <string name="otp_title">کد تایید</string>
+    <string name="otp_hint">کد ۶ رقمی</string>
+    <string name="verify">تایید</string>
+    <string name="message_hint">پیام…</string>
+</resources>
